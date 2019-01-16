@@ -1,0 +1,9 @@
+[user]
+	name = Damian Krzeminski
+	email = krzemdamian@gmail.com
+[diff]
+	tool = winmerge
+[difftool]
+	prompt = false
+[core]
+	editor = vim
