@@ -3,3 +3,4 @@ Transparency=medium
 FontHeight=12
 Columns=110
 Rows=40
+CursorType=block
