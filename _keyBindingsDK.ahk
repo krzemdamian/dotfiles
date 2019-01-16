@@ -26,7 +26,7 @@ keystate = ""
 
 CapsLock::
   WinGetTitle, classname, A
-  If InString (classname, Visual Studio) or InString (classname, MINGW64)
+  IfInString, classname, Visual Studio
   {
     ;MsgBox, The active window's class is "%classname%".  ;comment left for check
     SetCapsLockState, Off        ;alaways turn off CapsLock if in VS
@@ -42,6 +42,9 @@ CapsLock::
   return
   }
   return
+
+;code below is unreachable in VS
+; TODO: fix this :)
 
 CapsLock & a::Send ^a
 CapsLock & b::Send ^b
