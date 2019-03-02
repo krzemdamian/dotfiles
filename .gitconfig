@@ -7,3 +7,5 @@
 	prompt = false
 [core]
 	editor = vim
+[winUpdater]
+	recentlySeenVersion = 2.21.0.windows.1
