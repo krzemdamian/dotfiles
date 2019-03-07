@@ -18,6 +18,9 @@
 ::gunignore::git update-index --no-assume-unchanged
 ::gmnff::git merge --no-ff -e -m "" -
 ::-h::--help
+::glo::git log --all --decorate --oneline --graph
+::gdc::git diff --cached
+::gdtc::git difftool --cached
 
 CapsLock & a::Send ^a return
 CapsLock & b::Send ^b return
