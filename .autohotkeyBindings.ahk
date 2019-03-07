@@ -21,6 +21,8 @@
 ::glo::git log --all --decorate --oneline --graph
 ::gdc::git diff --cached
 ::gdtc::git difftool --cached
+::gps::git push
+::gpl::git pull
 
 CapsLock & a::Send ^a return
 CapsLock & b::Send ^b return
