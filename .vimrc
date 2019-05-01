@@ -76,6 +76,8 @@ endif
 " ==============================================================================
 " Key Mappings
 " ==============================================================================
+let mapleader=","       " leader is comma
+
 " Search for all trailing white spaces by pressing F7
 nnoremap <F7> /\s\+$<CR>
 " Remove all trailing white spaces by pressing Shift + F7
@@ -84,3 +86,24 @@ nmap <CR> o<Esc>
 
 nmap <Leader>k O<Esc>
 nmap <Leader>j o<Esc>
+
+" camelCaseSearch
+nnoremap C /[A-Z]\<Bar>\<<CR>:noh<CR>
+nnoremap X ?[A-Z]\<Bar>\<<CR>:noh<CR>
+
+" move to beginning/end of line
+nnoremap B ^
+nnoremap E $
+
+" highlight last inserted text
+nnoremap gV `[v`]
+
+" turn off search highlight
+nnoremap <leader><space> :nohlsearch<CR>
+
+" space open/closes folds
+nnoremap <space> za
+
+" move vertically by visual line
+nnoremap j gj
+nnoremap k gk
