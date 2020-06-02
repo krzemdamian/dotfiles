@@ -25,14 +25,14 @@
 ::gps::git push
 ::gpl::git pull
 
+; AutoHotkey Media Keys
+^+ScrollLock::Send       {Media_Play_Pause}
+^+PrintScreen::Send        {Media_Prev}
+^+CtrlBreak::Send       {Media_Next}
+^+End::Send  {Volume_Mute}
+^+PgUp::Send   {Volume_Up}
+^+PgDn::Send   {Volume_Down}
+
 CapsLock::
     SetCapsLockState, Off        ;alaways turn off CapsLock if in VS
     Send {ESC}
-
-; AutoHotkey Media Keys
-^Down::Send       {Media_Play_Pause}
-^Left::Send        {Media_Prev}
-^Right::Send       {Media_Next}
-^CtrlBreak::Send  {Volume_Mute}
-^PgUp::Send   {Volume_Up}
-^PgDn::Send   {Volume_Down}
